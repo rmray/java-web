@@ -1,21 +1,23 @@
-# IntelliJ IDEA
-.idea/
-*.iml
+# 忽略编译输出目录
 out/
+bin/
+target/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
-# VS Code
-.vscode/
-
-# Eclipse
-.classpath
-.project
-.settings/
-
-# 构建产物与系统缓存
-bin/
-target/
+# 忽略系统与编辑器缓存
 .DS_Store
 Thumbs.db
 *.log
+.vscode/
+
+# 忽略 IDEA 本地与个人状态文件（不要把这些推上去）
+**/.idea/**/workspace.xml
+**/.idea/**/tasks.xml
+**/.idea/**/usage.statistics.xml
+**/.idea/**/shelf/
+**/.idea/**/httpRequests/
+**/.idea/**/dataSources/
+**/.idea/**/dataSources.local.xml
+
+# 注意：不要忽略 *.iml、.idea/modules.xml、.idea/artifacts/
